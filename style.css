@@ -61,7 +61,7 @@ nav > a:hover{
 main{
     background-color: white;
     height: auto;
-    width: 1000px;
+    width: 999px;
     margin: auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
