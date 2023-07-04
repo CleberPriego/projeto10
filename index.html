@@ -16,19 +16,17 @@
             margin: 0;
         }
         body{
-            background-color:rgb(132, 225, 173);
-            font-family: Arial Narrow, sans-serif;
+            background-color: rgb(224, 216, 191);
+            /* background-color:rgb(132, 225, 173); */
+            font-family: Arial, Verdana, Helvetica, sans-serif;
             
         }
         header{
-            /* background-color: green; */
             background-image: linear-gradient(180deg,rgb(47, 168, 102),rgb(6, 61, 30));
-            /* height: 100px; */
             padding: 10px;
         }
         
         header > h1{
-            /* background-color: rgb(26, 92, 56); */
             color: white;
             text-align: center;
             font-size: 45px;
@@ -36,7 +34,6 @@
             margin-bottom: 20px;
         }
         header > p{
-            /* background-color: rgb(26, 92, 56); */
             color: white;
             text-align: center;
             font-size: 23px;
@@ -44,17 +41,17 @@
             padding-right: 10px;
             padding-left: 10px;
             margin: auto;
-            /* margin-bottom: 100px; */
-            /* height: 100px; */
             padding-bottom: 50px;
         }
         nav{
             background-color: rgb(6, 61, 30);
             padding-left: 5px;
             padding-bottom: 3px;
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.18);
         }
         nav > a{
             color: rgb(131, 225, 173);
+            text-decoration: none;
             font-size: 20px;
             padding: 2px;
 
@@ -72,10 +69,21 @@
             margin: auto;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.419); */
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418); */
+            
         }
         main > article > p{
             padding: 20px;
             text-indent: 20px;
+            line-height: 30px;
+            font-weight:500;
+        }
+        main > article > p > a{
+            background-color: rgb(97, 246, 164);
+            text-decoration: none;
+            padding: 3px;
         }
         .formatacaoH1Art{
            font-family: 'Android', Arial, Helvetica, sans-serif;
@@ -86,7 +94,7 @@
            padding-top: 20px;
         }
         .formatacaoH2Art{
-            background-color:rgb(132, 225, 173);
+            background-image: linear-gradient(to right, rgb(131, 225, 173), transparent);
             font-family: 'Android', Arial, Helvetica, sans-serif;
             font-weight: normal;
             position: relative;
@@ -97,11 +105,8 @@
         }
 
         .imagens{
-            /* position: relative; */
             display: flex;
-            /* flex-direction: row; */
             justify-content: center;
-            /* align-items: center; */
         }
         .video{
             background-color: rgb(26, 92, 56);
@@ -114,12 +119,12 @@
         }
         .bonus{
             background-color: rgb(197, 235, 214);
-            /* padding: 15px; */
             width: 700px;
             margin: auto;
             margin-top: 20px;
             border-radius: 30px ;
             position: relative;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
         }
         .bonusH3{
             background-color: rgb(47, 168, 102);
@@ -133,13 +138,11 @@
             padding: 10px;
             text-indent: 20px;
         }
-        .coluna1{
-            position: absolute;
-            left: 50px;
-        }
-        .coluna2{
-            position: relative;
-            left: 400px;
+        aside > ul{
+            list-style-type: '\2714\00A0\00A0';
+            /* list-style-type: '\2713'; */
+            /* list-style-type: '\2714'; */
+            columns: 2;
         }
         footer{
             background-color: rgb(26, 92, 56);
@@ -147,13 +150,6 @@
             margin-top: 10px;
             text-align: center;
             padding: 10px;
-        }
-
-        .coluna1 > div::before{
-            content: url(pacote-projeto-d010/imagens/Aniket-Suvarna-Box-Regular-Bx-check.16.png);
-        }
-        .coluna2 > div::before{
-            content: url(pacote-projeto-d010/imagens/Aniket-Suvarna-Box-Regular-Bx-check.16.png);
         }
         .selecaoPalavra{
             color: rgb(0, 86, 0);
@@ -198,11 +194,27 @@
         <section class="video">
             <iframe class="videoYouTube" width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
-        <section class="bonus">
+        <aside class="bonus">
             <h3 class="bonusH3">Quer aprender mais?</h3>
             <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
 
-            <div class="coluna1">
+            <ul>
+                <li>1.5 - Cupcake</li>
+                <li>1.6 - Donut</li>
+                <li>3.0 - Eclair</li>
+                <li>2.2 - Froyo</li>
+                <li>2.3 - Gingerbread</li>
+                <li>3.0 - Honeycomb</li>
+                <li>4.0 - Ice Cream Sandwich</li>
+                <li>4.1 - Jelly Bean</li>
+                <li>4.4 - KitKat</li>
+                <li>5.0 - Lolipop</li>
+                <li>6.0 - Marshmallow</li>
+                <li>7.0 - Nougat</li>
+                <li>8.0 - Oreo</li>
+                <li>9.0 - Pie</li>
+            </ul>
+            <!-- <div class="coluna1">
                 <div>1.5 - Cupcake</div>
                 <div>1.6 - Donut</div>
                 <div>3.0 - Eclair</div>
@@ -219,10 +231,10 @@
                 <div>7.0 - Nougat</div>
                 <div>8.0 - Oreo</div>
                 <div>9.0 - Pie</div>
-            </div>
+            </div> -->
             <p>Infelizmente, o <span class="selecaoPalavra">Android Q</span> não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao <span class="selecaoPalavra">Android 10</span>.</p>
             <p>Acesse aqui o site <a href="https://www.android.com/intl/pt-BR_br/history/" target="_blank" rel="noopener noreferrer"><span class="selecaoPalavra">Android History</span></a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
-        </section>
+        </aside>
         <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <span class="selecaoPalavra">Android</span> e seu simpático mascote.</p>
         </article>
     </main>
